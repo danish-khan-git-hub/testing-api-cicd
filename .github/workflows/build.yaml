@@ -70,6 +70,24 @@ jobs:
       with:
         name: artifacts
 
+    - name: Configure Maven credentials for Exchange
+      env:
+        USERNAME: ${{ secrets.anypoint_platform_username }}
+        PASSWORD: ${{ secrets.anypoint_platform_password }}
+      run: |
+        mkdir -p ~/.m2
+        cat > ~/.m2/settings.xml << EOF
+        <settings>
+          <servers>
+            <server>
+              <id>anypoint-exchange-v3</id>
+              <username>${USERNAME}</username>
+              <password>${PASSWORD}</password>
+            </server>
+          </servers>
+        </settings>
+        EOF
+
     - name: Deploy to Sandbox
       env:
         USERNAME: ${{ secrets.anypoint_platform_username }}
