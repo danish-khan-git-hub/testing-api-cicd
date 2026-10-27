@@ -12,7 +12,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
+        <cloudhub.app.name>testing-api-cicd-danish</cloudhub.app.name>
 		<app.runtime>4.12.2</app.runtime>
 		<mule.maven.plugin.version>4.10.1</mule.maven.plugin.version>
 	</properties>
@@ -29,6 +29,7 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				<configuration>
 			</plugin>
 		</plugins>
 	</build>
