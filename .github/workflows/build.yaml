@@ -97,7 +97,8 @@ jobs:
           -DgroupId=a2c4bc0c-43fc-4e6c-abd4-7c1a2fd87bd8 \
           -DartifactId=testing-api-cicd \
           -Dversion=1.0.0 \
-          -Dpackaging=mule-application \
+          -Dpackaging=jar \
+          -Dclassifier=mule-application \
           -DrepositoryId=anypoint-exchange-v3 \
           -Durl=https://maven.anypoint.mulesoft.com/api/v3/organizations/a2c4bc0c-43fc-4e6c-abd4-7c1a2fd87bd8/maven
 
