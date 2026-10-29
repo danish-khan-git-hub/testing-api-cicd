@@ -91,7 +91,7 @@ jobs:
     - name: Publish artifact to Exchange
       run: |
         artifactName=$(ls *.jar | head -1)
-        mvn -B -X org.apache.maven.plugins:maven-deploy-plugin:3.1.2:deploy-file \
+        mvn -B org.apache.maven.plugins:maven-deploy-plugin:3.1.2:deploy-file \
           -Dfile="$artifactName" \
           -DpomFile=pom.xml \
           -DgroupId=a2c4bc0c-43fc-4e6c-abd4-7c1a2fd87bd8 \
