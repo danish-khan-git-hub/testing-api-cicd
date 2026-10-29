@@ -96,7 +96,7 @@ jobs:
           -DpomFile=pom.xml \
           -DgroupId=a2c4bc0c-43fc-4e6c-abd4-7c1a2fd87bd8 \
           -DartifactId=testing-api-cicd \
-          -Dversion=1.0.0 \
+          -Dversion=1.0.1 \
           -Dpackaging=jar \
           -Dclassifier=mule-application \
           -DrepositoryId=anypoint-exchange-v3 \

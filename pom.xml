@@ -5,7 +5,7 @@
 	<!-- Exchange assets must use the organization ID as groupId -->
 	<groupId>a2c4bc0c-43fc-4e6c-abd4-7c1a2fd87bd8</groupId>
 	<artifactId>testing-api-cicd</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<packaging>mule-application</packaging>
 
 	<name>testing-api-cicd</name>
